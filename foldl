@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cmd=$1
+acc=$2
+
+if [ -z "$cmd" ]; then
+    echo "foldl: missing command" >&2
+    exit 1
+fi
+
+while read line; do
+    x=$acc
+    y=$line
+    acc=`eval $cmd`
+done
+
+echo $acc
+

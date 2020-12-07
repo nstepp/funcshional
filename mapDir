@@ -1,0 +1,19 @@
+#!/bin/sh
+
+cmd=$1
+
+if [ -z "$cmd" ]; then
+    echo "mapDir: need command" >&2
+    exit 1
+fi
+
+while read dir; do
+    if [ ! -d "$dir" ]; then
+        continue
+    fi
+    pushd $dir
+    $cmd
+    popd
+done
+
+

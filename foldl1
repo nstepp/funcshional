@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cmd=$1
+
+if [ -z "$cmd" ]; then
+    echo "foldl1: missing command" >&2
+    exit 1
+fi
+
+read line
+foldl "$cmd" "$line"
+

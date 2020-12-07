@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cmd=$1
+
+if [ -z "$cmd" ]; then
+    echo "map: need command" >&2
+    exit 1
+fi
+
+while read line; do
+    echo `$cmd $line`
+done
+
