@@ -11,9 +11,9 @@ while read dir; do
     if [ ! -d "$dir" ]; then
         continue
     fi
-    pushd $dir
+    pushd $dir > /dev/null
     $cmd
-    popd
+    popd > /dev/null
 done
 
 
