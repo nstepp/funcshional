@@ -25,7 +25,7 @@ total 56
 -rwxr-xr-x  1 nstepp  nstepp   108 Dec  7 11:13 ix
 -rwxr-xr-x  1 nstepp  nstepp   138 Dec  7 11:13 map
 -rwxr-xr-x  1 nstepp  nstepp   205 Dec  7 11:13 mapDir
-nstepp $ ls -l | ix 6 | foldl 'echo $((x+y))' 0
+nstepp $ ls -l | ix 5 | foldl 'echo $((x+y))' 0
 1875
 nstepp $
 ```
@@ -46,7 +46,7 @@ total 56
 -rwxr-xr-x  1 nstepp  nstepp   108 Dec  7 11:13 ix
 -rwxr-xr-x  1 nstepp  nstepp   138 Dec  7 11:13 map
 -rwxr-xr-x  1 nstepp  nstepp   205 Dec  7 11:13 mapDir
-nstepp $ ls -l | ix 6 | foldl1 'echo $((x+y))'
+nstepp $ ls -l | ix 5 | foldl1 'echo $((x+y))'
 1875
 nstepp $
 ```
@@ -67,7 +67,7 @@ total 56
 -rwxr-xr-x  1 nstepp  nstepp   108 Dec  7 11:13 ix
 -rwxr-xr-x  1 nstepp  nstepp   138 Dec  7 11:13 map
 -rwxr-xr-x  1 nstepp  nstepp   205 Dec  7 11:13 mapDir
-nstepp $ ls -l | ix 6
+nstepp $ ls -l | ix 5
 1068
 46
 182
